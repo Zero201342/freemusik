@@ -1,0 +1,76 @@
+/* Cài đặt font mặc định cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Màu nền tối */
+    color: white; /* Màu chữ trắng */
+    text-align: center;
+}
+
+/* Phần chứa tất cả các yếu tố trong trang */
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Đặt container ở giữa màn hình */
+    padding: 20px;
+    background-color: #1E1E1E; /* Nền tối cho container */
+    border-radius: 10px; /* Bo góc cho container */
+}
+
+/* Tiêu đề trang */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1DB954; /* Màu xanh của Spotify */
+}
+
+/* Định dạng cho phần input */
+input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #1DB954;
+    background-color: #1E1E1E;
+    color: white;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover trên input */
+input[type="text"]:focus {
+    border-color: #1DB954;
+    outline: none;
+}
+
+/* Định dạng cho nút tải nhạc */
+button {
+    background-color: #1DB954; /* Màu nền nút giống màu Spotify */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover trên nút */
+button:hover {
+    background-color: #1ed760;
+}
+
+/* Định dạng cho iframe (Player nhúng từ Spotify) */
+iframe {
+    margin-top: 30px;
+    width: 100%;
+    height: 80px;
+    border: none;
+}
+
+/* Định dạng cho phần thông tin về bài hát đang phát */
+#musicInfo {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
